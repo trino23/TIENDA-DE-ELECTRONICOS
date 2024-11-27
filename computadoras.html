@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocafone | Computadoras</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #fcfcfc;
+            color: #333;
+        }
+
+        /* Barra Superior */
+        .top-bar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        /* Header y Navegación */
+        .header {
+            background-color: #1c1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #b516167e;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header h1 {
+            font-size: 1.5em;
+            color: #ff6600;
+        }
+
+        .header nav a {
+            font-size: 1em;
+            color: #f5f1ef;
+            text-decoration: none;
+            margin-left: 15px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .header nav a:hover {
+            color: #ff6600;
+            transform: scale(1.1);
+        }
+
+        /* Productos */
+        .productos {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #f8f3f3;
+            border-radius: 8%;
+        }
+
+        .productos h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #0b0a0a;
+        }
+
+        .productos-galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .producto {
+            background-color: #fffafa;
+            width: 200px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #f8f4f4;
+            transition: box-shadow 0.3s, transform 0.3s;
+            border-radius: 15%;
+        }
+
+        .producto:hover {
+            box-shadow: 1px 4px 8px rgba(2, 2, 2, 0.2);
+            transform: translateY(-4px);
+        }
+
+        .producto img {
+            width: 100%;
+            height: auto;
+        }
+
+        .producto h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .producto p {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .producto button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 10%;
+        }
+
+        .producto button:hover {
+            background-color: #e55a00;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra Superior -->
+    <div class="top-bar">¡Envío gratis en compras superiores a $50!</div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="imgtroca.webp" alt="Trocafone Logo">
+            <h1>Trocafone</h1>
+        </div>
+        <nav>
+            <a href="./la pagina principal de trocafone.html">Inicio</a>
+            <a href="./telefono.html">Smartphones</a>
+            <a href="./tablet.html">Tablets</a>
+            <a href="./acsesorios.html">Accesorios</a>
+            <a href="./carrodecompras.html">Carrito</a>
+        </nav>
+    </header>
+
+    <!-- Productos Destacados - Computadoras -->
+    <section class="productos">
+        <h2>Computadoras Destacadas</h2>
+        <div class="productos-galeria">
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/OIP.oWFlLTvRi8SFTUZT62BxAwHaGR?rs=1&pid=ImgDetMain" alt="MacBook Pro 13">
+                <h3>MacBook Pro 13</h3>
+                <p>8 GB RAM, 256 GB SSD</p>
+                <p><strong>$1,200.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src=https://th.bing.com/th/id/OIP.fS3_FbYk7HUSltO7unJ2mQHaE8?rs=1&pid=ImgDetMain" alt="Dell XPS 13">
+                <h3>Dell XPS 13</h3>
+                <p>16 GB RAM, 512 GB SSD</p>
+                <p><strong>$1,400.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/R.cf430f9f3dea357885cc2bf8454a8358?rik=ixXb8Kg5GJOohw&pid=ImgRaw&r=0" alt="HP Spectre x360">
+                <h3>HP Spectre x360</h3>
+                <p>8 GB RAM, 256 GB SSD</p>
+                <p><strong>$1,100.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/R.f4a2e5490a93f6d77f8770d6b9046555?rik=GmynZl3TduV%2f2Q&pid=ImgRaw&r=0" alt="Asus ZenBook 14">
+                <h3>Asus ZenBook 14</h3>
+                <p>8 GB RAM, 512 GB SSD</p>
+                <p><strong>$950.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/OIP.29nwDwFQi2mguEX08PtyjwHaDk?rs=1&pid=ImgDetMain" alt="Microsoft Surface Laptop 3">
+                <h3>Microsoft Surface Laptop 3</h3>
+                <p>8 GB RAM, 128 GB SSD</p>
+                <p><strong>$999.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/OIP.e2NWJV3QneQsSnfyno0JPgHaFM?rs=1&pid=ImgDetMain" alt="Lenovo ThinkPad X1 Carbon">
+                <h3>Lenovo ThinkPad X1 Carbon</h3>
+                <p>16 GB RAM, 1 TB SSD</p>
+                <p><strong>$1,500.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Trocafone | Todos los derechos reservados</p>
+        <p><a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a> | <a href="#">Contacto</a></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocafone | Mi Cuenta</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background-color: #1c1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #b516167e;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header h1 {
+            font-size: 1.5em;
+            color: #ff6600;
+        }
+
+        .header nav a {
+            font-size: 1em;
+            color: #f5f1ef;
+            text-decoration: none;
+            margin-left: 15px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .header nav a:hover {
+            color: #ff6600;
+            transform: scale(1.1);
+        }
+
+        /* Account Container */
+        .account-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        .account-container h2 {
+            margin-bottom: 20px;
+            color: #ff6600;
+        }
+
+        .account-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .account-container input[type="email"],
+        .account-container input[type="password"] {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .account-container button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .account-container button:hover {
+            background-color: #e55a00;
+        }
+
+        .account-container a {
+            color: #ff6600;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .account-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="imgtroca.webp" alt="Trocafone Logo">
+            <h1>Trocafone</h1>
+        </div>
+        <nav>
+            <a href="./la pagina principal de trocafone.html">Inicio</a>
+            <a href="./telefono.html">Smartphones</a>
+            <a href="./tablet.html">Tablets</a>
+            <a href="./acsesorios.html">Accesorios</a>
+            <a href="./computadoras.html">Computadoras</a>
+        </nav>
+    </header>
+
+    <!-- Contenedor Mi Cuenta -->
+    <div class="account-container">
+        <h2>Iniciar Sesión</h2>
+        <form action="./la pagina principal de trocafone.html" method="POST">
+            <input type="email" placeholder="Correo electrónico" >
+            <input type="password" placeholder="Contraseña" >
+            <button type="submit">Entrar</button>
+        </form>
+        <a href="#">¿No tienes cuenta? Regístrate</a>
+    </div>
+</body>
+
+</html>

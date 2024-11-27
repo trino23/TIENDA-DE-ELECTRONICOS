@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocafone | Ofertas</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #fcfcfc;
+            color: #333;
+        }
+
+        /* Barra Superior */
+        .top-bar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        /* Header y Navegación */
+        .header {
+            background-color: #1c1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #b516167e;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header h1 {
+            font-size: 1.5em;
+            color: #ff6600;
+        }
+
+        .header nav a {
+            font-size: 1em;
+            color: #f5f1ef;
+            text-decoration: none;
+            margin-left: 15px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .header nav a:hover {
+            color: #ff6600;
+            transform: scale(1.1);
+        }
+
+        /* Ofertas */
+        .ofertas {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #f8f3f3;
+            border-radius: 8%;
+        }
+
+        .ofertas h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #0b0a0a;
+        }
+
+        .ofertas-galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .oferta {
+            background-color: #fffafa;
+            width: 200px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #f8f4f4;
+            transition: box-shadow 0.3s, transform 0.3s;
+            border-radius: 15%;
+            position: relative;
+        }
+
+        .oferta:hover {
+            box-shadow: 1px 4px 8px rgba(2, 2, 2, 0.2);
+            transform: translateY(-4px);
+        }
+
+        .oferta img {
+            width: 100%;
+            height: auto;
+        }
+
+        .oferta h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .oferta p {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .oferta .precio {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #ff6600;
+        }
+
+        .oferta .precio-original {
+            font-size: 0.9em;
+            color: #999;
+            text-decoration: line-through;
+            margin-left: 10px;
+        }
+
+        .oferta button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 10%;
+        }
+
+        .oferta button:hover {
+            background-color: #e55a00;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra Superior -->
+    <div class="top-bar">¡Envío gratis en compras superiores a $50!</div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="imgtroca.webp" alt="Trocafone Logo">
+            <h1>Trocafone</h1>
+        </div>
+        <nav>
+            <a href="./la pagina principal de trocafone.html">Inicio</a>
+            <a href="./telefono.html">Smartphones</a>
+            <a href="./tablet.html">Tablets</a>
+            <a href="./acsesorios.html">Accesorios</a>
+            <a href="./computadoras.html">Computadoras</a>
+        </nav>
+    </header>
+
+    <!-- Ofertas Destacadas -->
+    <section class="ofertas">
+        <h2>Ofertas Exclusivas</h2>
+        <div class="ofertas-galeria">
+            <div class="oferta">
+                <img src="https://th.bing.com/th/id/R.c2308ac642dd48cbe022b11ce9e66133?rik=jMJYTxOe2Cbhxw&pid=ImgRaw&r=0" alt="iPhone XR">
+                <h3>iPhone XR</h3>
+                <p>256 GB, Negro</p>
+                <p class="precio">$299.99 <span class="precio-original">$399.99</span></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="oferta">
+                <img src="https://th.bing.com/th/id/OIP.mb9oZMvKvV0pT2dNtCaknAHaHc?rs=1&pid=ImgDetMain" alt="Samsung Galaxy S10">
+                <h3>Samsung Galaxy S10</h3>
+                <p>128 GB, Blanco</p>
+                <p class="precio">$249.99 <span class="precio-original">$349.99</span></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="oferta">
+                <img src="https://th.bing.com/th/id/R.3e4338f7b25fbd5f0fc79dafb7306f52?rik=mKqhzHtQ72ht2w&pid=ImgRaw&r=0" alt="Apple Watch">
+                <h3>Apple Watch Series 5</h3>
+                <p>44mm, Gris Espacial</p>
+                <p class="precio">$150.00 <span class="precio-original">$199.99</span></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="oferta">
+                <img src="https://th.bing.com/th/id/R.230ac611af674ab6f510136874ebcebf?rik=qlFh5vYLyFQYrg&pid=ImgRaw&r=0" alt="Samsung Galaxy Tab S6">
+                <h3>Samsung Galaxy Tab S6</h3>
+                <p>128 GB, Gris</p>
+                <p class="precio">$600.00 <span class="precio-original">$700.00</span></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <!-- Agrega más ofertas aquí -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Trocafone | Todos los derechos reservados</p>
+        <p><a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a> | <a href="#">Contacto</a></p>
+    </footer>
+</body>
+
+</html>

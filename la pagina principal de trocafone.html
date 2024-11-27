@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocafone | Tienda de Smartphones y Tecnología</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #fcfcfc;
+            color: #fff;
+        }
+
+        /* Barra Superior */
+        .top-bar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        /* Header y Navegación */
+        .header {
+            background-color: #1c1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #b516167e;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header h1 {
+            font-size: 1.5em;
+            color: #ff6600;
+        }
+
+        /* Enlaces de Navegación */
+        .header nav a {
+            font-size: 1em;
+            color: #f5f1ef;
+            text-decoration: none;
+            margin-left: 15px;
+            transition: color 0.3s, transform 0.3s;
+        }
+      
+
+        .header nav a:hover {
+            color: #ff6600;
+            transform: scale(1.1);
+        }
+
+        /* Barra de Búsqueda */
+        .search-bar {
+            background-color: #fff;
+            padding: 10px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            
+        }
+        .search-bar  img {
+            width: 100px;
+            display: flex;
+            height: 10px;
+            margin-right: 0px;
+           
+           
+        }
+
+        .search-bar input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px 0 0 20px;
+            outline: none;
+            font-size: 0.9em;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ff6600;
+            color: #fff;
+            font-size: 0.9em;
+            border-radius: 0 20px 20px 0;
+            cursor: pointer;
+        }
+
+        .search-bar .icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .search-bar .icons a {
+            color: #333;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar .icons a img {
+            width: 20px;
+            height: 20px;
+            margin-right: 4px;
+        }
+
+        /* Banner Principal */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background: url('./promo.webp') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f5f100;
+            text-align: center;
+        }
+
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .banner-content h2 {
+            font-size: 60px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .banner-content p {
+            font-size: 1.2em;
+        }
+
+        /* Categorías */
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #201e1e;
+            
+        }
+
+        .category {
+            width: 100px;
+            height: 100px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .category:hover {
+            background-color: #333;
+            transform: scale(1.1);
+        }
+
+        .category img {
+            width: 50%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .category p {
+            font-size: 0.9em;
+            color: #bf5220;
+            font-weight: 600;
+            
+        }
+      
+
+        /* Productos */
+        .productos {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #f8f3f3;
+            border-radius: 8%;
+        }
+
+        .productos h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #0b0a0a;
+        }
+
+        .productos-galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .producto {
+            background-color: #fffafa;
+            width: 200px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #f8f4f4;
+            transition: box-shadow 0.3s, transform 0.3s;
+            border-radius: 15%;
+        }
+
+        .producto:hover {
+            box-shadow: 1px 4px 8px rgba(2, 2, 2, 0.2);
+            transform: translateY(-4px);
+        }
+
+        .producto img {
+            width: 100%;
+            height: auto;
+        }
+
+        .producto h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .producto p {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .producto button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 10%;
+        }
+
+        .producto button:hover {
+            background-color: #e55a00;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        /* Media Queries para Responsividad */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 1.2em;
+            }
+
+            .search-bar {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+            }
+
+            .search-bar input[type="text"] {
+                width: 100%;
+                border-radius: 20px;
+            }
+
+            .productos-galeria {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1em;
+            }
+
+            .banner-content h2 {
+                font-size: 1.5em;
+            }
+
+            .banner-content p {
+                font-size: 1em;
+            }
+
+            .productos h2 {
+                font-size: 1.5em;
+            }
+
+            .producto {
+                width: 150px;
+            }
+
+            .category {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra Superior -->
+    <div class="top-bar">¡Envío gratis en compras superiores a $50!</div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="imgtroca.webp" alt="Trocafone Logo">
+            <h1>Trocafone</h1>
+        </div>
+        <nav>
+            <a href="./la pagina principal de trocafone.html">Inicio</a>
+            <a href="./categorias.html">Categorías</a>
+            <a href="./ofretas.html">Ofertas</a>
+            <a href="./miCuenta.html">Mi cuenta</a>
+            <a href="./carrodecompras.html">Carrito</a>
+        </nav>
+    </header>
+
+    <!-- Barra de Búsqueda -->
+    <div class="search-bar">
+        <img src="./img trocafone/trocafonelogo.webp" alt="Trocafone Logo">
+        <input type="text" placeholder="Encuentra celulares y tablets seminuevos...">
+        <button>🔍</button>
+        <div class="icons">
+            <a href="./vendetucelu.html"><img src="./img trocafone/DALL·E 2024-11-10 21.28.22 - A high-resolution minimalist icon for 'Smartphones' with a modern, clean design, suitable for a tech-oriented website. The icon should be distinct, ea.webp" alt="Vender Icono"> Vende tu dispositivo</a>
+            <a href="./carrodecompras.html"><img src="./img trocafone/carrito-de-compras.png" alt="Carrito Icono">Carrito</a>
+            <a href="./miCuenta.html"><img src="./img trocafone/nueva-cuenta.png" alt="Usuario Icono"> Entrar</a>
+        </div>
+    </div>
+
+    <!-- Banner Principal -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Ofertas de Temporada en Tecnología</h2>
+            <p>Aprovecha descuentos exclusivos en los mejores productos</p>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categories">
+        <a href="./telefono.html" class="category">
+            <img src="./img trocafone/DALL·E 2024-11-10 21.28.22 - A high-resolution minimalist icon for 'Smartphones' with a modern, clean design, suitable for a tech-oriented website. The icon should be distinct, ea.webp" alt="Smartphones">
+            <p>Smartphones</p>
+        </a>
+        <a href="./tablet.html" class="category">
+            <img src="./img trocafone/tanles.webp" alt="Tablets">
+            <p>Tablets</p>
+        </a>
+        <a href="./acsesorios.html" class="category">
+            <img src="./img trocafone/acsesorios.webp" alt="Accesorios">
+            <p>Accesorios</p>
+        </a>
+        <a href="./computadoras.html" class="category">
+            <img src="./img trocafone/computadoeas.webp" alt="Computadoras">
+            <p>Computadoras</p>
+        </a>
+    </section>
+
+    <!-- Productos Destacados -->
+<!-- Productos Destacados -->
+<section class="productos">
+    <h2>Productos Destacados</h2>
+    <div class="productos-galeria">
+        <div class="producto">
+            <img src="https://th.bing.com/th/id/R.c2308ac642dd48cbe022b11ce9e66133?rik=jMJYTxOe2Cbhxw&pid=ImgRaw&r=0" alt="iPhone XR">
+            <h3>iPhone XR</h3>
+            <p>256 GB, Negro</p>
+            <p><strong>$299.99</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://th.bing.com/th/id/OIP.mb9oZMvKvV0pT2dNtCaknAHaHc?rs=1&pid=ImgDetMain" alt="Samsung Galaxy S10">
+            <h3>Samsung Galaxy S10</h3>
+            <p>128 GB, Blanco</p>
+            <p><strong>$249.99</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://th.bing.com/th/id/R.ea7dcc3ed247ddce3b877092f873e174?rik=mxb4ToWHn57yTA&pid=ImgRaw&r=0" alt="iPad Air">
+            <h3>iPad Air</h3>
+            <p>64 GB, Wi-Fi</p>
+            <p><strong>$350.00</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://th.bing.com/th/id/R.3e4338f7b25fbd5f0fc79dafb7306f52?rik=mKqhzHtQ72ht2w&pid=ImgRaw&r=0" alt="Apple Watch">
+            <h3>Apple Watch Series 5</h3>
+            <p>44mm, Gris Espacial</p>
+            <p><strong>$150.00</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://www.elgrupoinformatico.com/static/Noticias/2024/10/macbook-pro-m4-frontal-trasera-1200x675.jpg" alt="MacBook Pro">
+            <h3>MacBook Pro</h3>
+            <p>13", 256 GB SSD</p>
+            <p><strong>$1,200.00</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://seritag.com/images/b/nfcp134-google-pixel-5a-nfc.jpg" alt="Google Pixel 5">
+            <h3>Google Pixel 5</h3>
+            <p>128 GB, Verde</p>
+            <p><strong>$700.00</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://th.bing.com/th/id/R.e72c63f4ac0b83cc23e92b5e018c2300?rik=7q0pw5WaSYte9g&pid=ImgRaw&r=0" alt="OnePlus 8">
+            <h3>OnePlus 8</h3>
+            <p>128 GB, Negro</p>
+            <p><strong>$550.00</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://th.bing.com/th/id/R.6b4f00e78b43831fcfa38aeb5d59504b?rik=1l8HZseWEsarrA&pid=ImgRaw&r=0" alt="Sony Xperia 5">
+            <h3>Sony Xperia 5</h3>
+            <p>64 GB, Azul</p>
+            <p><strong>$450.00</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://th.bing.com/th/id/R.8c4f8f3ac641fbabf90e247979aba47f?rik=gIGqojeEM7Hvrw&pid=ImgRaw&r=0" alt="Huawei P30">
+            <h3>Huawei P30</h3>
+            <p>128 GB, Aurora</p>
+            <p><strong>$399.99</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://th.bing.com/th/id/R.230ac611af674ab6f510136874ebcebf?rik=qlFh5vYLyFQYrg&pid=ImgRaw&r=0" alt="Samsung Galaxy Tab S6">
+            <h3>Samsung Galaxy Tab S6</h3>
+            <p>128 GB, Gris</p>
+            <p><strong>$600.00</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://th.bing.com/th/id/R.cf626b1b87457662655f7e0267329162?rik=UpjjwE5M9yPEug&riu=http%3a%2f%2fwww.notebookcheck.net%2ffileadmin%2fNotebooks%2fLenovo%2fYoga_Tablet_2_Pro%2fLenovo_Yoga_Tablet_2_Pro_13_A_Hero_.jpg&ehk=84AGTt0Kzag36rKJKRY5gSHTTbmut7f%2b0JUCCWfANXU%3d&risl=&pid=ImgRaw&r=0" alt="Lenovo Yoga Tablet">
+            <h3>Lenovo Yoga Tablet</h3>
+            <p>64 GB, Plateado</p>
+            <p><strong>$299.99</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://th.bing.com/th/id/R.cfff2b8e4e12e0aa61037fc014501510?rik=UmN3Mvu9i9%2fAoQ&pid=ImgRaw&r=0" alt="Microsoft Surface Go">
+            <h3>Microsoft Surface Go</h3>
+            <p>128 GB, Plata</p>
+            <p><strong>$499.99</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://phonesdata.com/files/models/Samsung--Galaxy-Note-10-821.jpg" alt="Samsung Galaxy Note 10">
+            <h3>Samsung Galaxy Note 10</h3>
+            <p>256 GB, Negro</p>
+            <p><strong>$799.99</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://th.bing.com/th/id/OIP.xchOsTDRsGJD-B5_XtFEjQHaHa?rs=1&pid=ImgDetMain" alt="iPhone 12">
+            <h3>iPhone 12</h3>
+            <p>128 GB, Azul</p>
+            <p><strong>$899.99</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://media.pasionmovil.com/2020/12/xiaomi-mi-11-colores-portada.jpg" alt="Xiaomi Mi 11">
+            <h3>Xiaomi Mi 11</h3>
+            <p>256 GB, Negro</p>
+            <p><strong>$699.99</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://th.bing.com/th/id/R.42ce05a950171dbd5777183705dc9b30?rik=TmShX7hKHHEcXw&pid=ImgRaw&r=0" alt="LG Velvet">
+            <h3>LG Velvet</h3>
+            <p>128 GB, Blanco</p>
+            <p><strong>$599.99</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://th.bing.com/th/id/OIP.a1m7KdLD-Lt0xYoKjrd1hgHaJb?rs=1&pid=ImgDetMain" alt="Moto G Power">
+            <h3>Moto G Power</h3>
+            <p>64 GB, Gris</p>
+            <p><strong>$199.99</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://moviles.info/wp-content/uploads/2019/09/Nokia-7.2-1.png" alt="Nokia 7.2">
+            <h3>Nokia 7.2</h3>
+            <p>128 GB, Verde</p>
+            <p><strong>$349.99</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://th.bing.com/th/id/OIP.uVxEVASb4bA0HOaVbo3GegHaEK?rs=1&pid=ImgDetMain" alt="Realme 7 Pro">
+            <h3>Realme 7 Pro</h3>
+            <p>128 GB, Azul</p>
+            <p><strong>$299.99</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://phonesstorekenya.com/wp-content/uploads/2020/06/Oppo-Reno4-5G-b-768x768.jpg" alt="Oppo Reno 4">
+            <h3>Oppo Reno 4</h3>
+            <p>256 GB, Plata</p>
+            <p><strong>$399.99</strong></p>
+            <button>Añadir al Carrito</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Trocafone | Todos los derechos reservados</p>
+        <p><a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a> | <a href="#">Contacto</a></p>
+    </footer>
+</body>
+
+</html>

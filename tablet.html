@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocafone | Tablets</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #fcfcfc;
+            color: #333;
+        }
+
+        /* Barra Superior */
+        .top-bar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        /* Header y Navegación */
+        .header {
+            background-color: #1c1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #b516167e;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header h1 {
+            font-size: 1.5em;
+            color: #ff6600;
+        }
+
+        .header nav a {
+            font-size: 1em;
+            color: #f5f1ef;
+            text-decoration: none;
+            margin-left: 15px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .header nav a:hover {
+            color: #ff6600;
+            transform: scale(1.1);
+        }
+
+        /* Productos */
+        .productos {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #f8f3f3;
+            border-radius: 8%;
+        }
+
+        .productos h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #0b0a0a;
+        }
+
+        .productos-galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .producto {
+            background-color: #fffafa;
+            width: 200px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #f8f4f4;
+            transition: box-shadow 0.3s, transform 0.3s;
+            border-radius: 15%;
+        }
+
+        .producto:hover {
+            box-shadow: 1px 4px 8px rgba(2, 2, 2, 0.2);
+            transform: translateY(-4px);
+        }
+
+        .producto img {
+            width: 100%;
+            height: auto;
+        }
+
+        .producto h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .producto p {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .producto button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 10%;
+        }
+
+        .producto button:hover {
+            background-color: #e55a00;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra Superior -->
+    <div class="top-bar">¡Envío gratis en compras superiores a $50!</div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="imgtroca.webp" alt="Trocafone Logo">
+            <h1>Trocafone</h1>
+        </div>
+        <nav>
+            <a href="./la pagina principal de trocafone.html">Inicio</a>
+            <a href="./telefono.html">Smartphones</a>
+            <a href="./acsesorios.html">Accesorios</a>
+            <a href="computadoras.html">Computadoras</a>
+            <a href="./carrodecompras.html">Carrito</a>
+        </nav>
+    </header>
+
+    <!-- Productos Destacados - Tablets -->
+    <section class="productos">
+        <h2>Tablets Destacadas</h2>
+        <div class="productos-galeria">
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/R.ea7dcc3ed247ddce3b877092f873e174?rik=mxb4ToWHn57yTA&pid=ImgRaw&r=0" alt="iPad Air">
+                <h3>iPad Air</h3>
+                <p>64 GB, Wi-Fi</p>
+                <p><strong>$350.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/R.230ac611af674ab6f510136874ebcebf?rik=qlFh5vYLyFQYrg&pid=ImgRaw&r=0" alt="Samsung Galaxy Tab S6">
+                <h3>Samsung Galaxy Tab S6</h3>
+                <p>128 GB, Gris</p>
+                <p><strong>$600.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/R.cf626b1b87457662655f7e0267329162?rik=UpjjwE5M9yPEug&pid=ImgRaw&r=0" alt="Lenovo Yoga Tablet">
+                <h3>Lenovo Yoga Tablet</h3>
+                <p>64 GB, Plateado</p>
+                <p><strong>$299.99</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/R.cfff2b8e4e12e0aa61037fc014501510?rik=UmN3Mvu9i9%2fAoQ&pid=ImgRaw&r=0" alt="Microsoft Surface Go">
+                <h3>Microsoft Surface Go</h3>
+                <p>128 GB, Plata</p>
+                <p><strong>$499.99</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/R.0c15f0dbd3bb0bc003c841ae5365b611?rik=oUj3rJOkqkMQAw&pid=ImgRaw&r=0" alt="Samsung Galaxy Tab S7">
+                <h3>Samsung Galaxy Tab S7</h3>
+                <p>256 GB, Negro</p>
+                <p><strong>$700.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/OIP.wHd9Ih-_XP23u6SrmEwypwHaI1?rs=1&pid=ImgDetMain" alt="Apple iPad Mini">
+                <h3>Apple iPad Mini</h3>
+                <p>128 GB, Oro</p>
+                <p><strong>$450.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/OIP.j4lEIoPqs46RIz3a3rO_qQHaHD?rs=1&pid=ImgDetMain" alt="Samsung Galaxy Tab A">
+                <h3>Samsung Galaxy Tab A</h3>
+                <p>64 GB, Negro</p>
+                <p><strong>$200.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://www.androidpolice.com/wp-content/uploads/2017/09/nexus2cee_Fire-HD-10-Horizontal-Right.jpg" alt="Amazon Fire HD 10">
+                <h3>Amazon Fire HD 10</h3>
+                <p>32 GB, Negro</p>
+                <p><strong>$149.99</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/R.3fd8fd7b7ce36df7d8393876eb6fdccb?rik=pEIQVA0OOlbNvQ&pid=ImgRaw&r=0" alt="Huawei MediaPad M6">
+                <h3>Huawei MediaPad M6</h3>
+                <p>128 GB, Dorado</p>
+                <p><strong>$379.99</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/R.f8d54b87a85d646cc580e4215e4c4ff3?rik=wnFi4pVqMeq3fw&pid=ImgRaw&r=0" alt="Xiaomi Pad 5">
+                <h3>Xiaomi Pad 5</h3>
+                <p>256 GB,Xiaomi Pad 5</p>
+                <p><strong>$420.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Trocafone | Todos los derechos reservados</p>
+        <p><a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a> | <a href="#">Contacto</a></p>
+    </footer>
+</body>
+
+</html>
+

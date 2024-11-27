@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocafone | Accesorios</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #fcfcfc;
+            color: #333;
+        }
+
+        /* Barra Superior */
+        .top-bar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        /* Header y Navegación */
+        .header {
+            background-color: #1c1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #b516167e;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header h1 {
+            font-size: 1.5em;
+            color: #ff6600;
+        }
+
+        .header nav a {
+            font-size: 1em;
+            color: #f5f1ef;
+            text-decoration: none;
+            margin-left: 15px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .header nav a:hover {
+            color: #ff6600;
+            transform: scale(1.1);
+        }
+
+        /* Productos */
+        .productos {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #f8f3f3;
+            border-radius: 8%;
+        }
+
+        .productos h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #0b0a0a;
+        }
+
+        .productos-galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .producto {
+            background-color: #fffafa;
+            width: 200px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #f8f4f4;
+            transition: box-shadow 0.3s, transform 0.3s;
+            border-radius: 15%;
+        }
+
+        .producto:hover {
+            box-shadow: 1px 4px 8px rgba(2, 2, 2, 0.2);
+            transform: translateY(-4px);
+        }
+
+        .producto img {
+            width: 100%;
+            height: auto;
+        }
+
+        .producto h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .producto p {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .producto button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 10%;
+        }
+
+        .producto button:hover {
+            background-color: #e55a00;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra Superior -->
+    <div class="top-bar">¡Envío gratis en compras superiores a $50!</div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="imgtroca.webp" alt="Trocafone Logo">
+            <h1>Trocafone</h1>
+        </div>
+        <nav>
+            <a href="./la pagina principal de trocafone.html">Inicio</a>
+            <a href="./telefono.html">Smartphones</a>
+            <a href="./tablet.html">Tablets</a>
+            <a href="./computadoras.html">Computadoras</a>
+            <a href="./carrodecompras.html">Carrito</a>
+        </nav>
+    </header>
+
+    <!-- Productos Destacados - Accesorios -->
+    <section class="productos">
+        <h2>Accesorios Destacados</h2>
+        <div class="productos-galeria">
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/OIP.f_kk2IFyUk75dXzfe3NDOAHaHa?rs=1&pid=ImgDetMain" alt="Auriculares Bluetooth">
+                <h3>Auriculares Bluetooth</h3>
+                <p>Color Negro</p>
+                <p><strong>$50.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/OIP.j7W08FXmGZkVnNzgyvSZ5QHaHa?rs=1&pid=ImgDetMain" alt="Cargador Inalámbrico">
+                <h3>Cargador Inalámbrico</h3>
+                <p>10W, Negro</p>
+                <p><strong>$25.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/OIP.RvrVVgm5vRSOgGT9stzLeAHaGk?rs=1&pid=ImgDetMain" alt="Power Bank">
+                <h3>Power Bank</h3>
+                <p>10,000 mAh, Blanco</p>
+                <p><strong>$30.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/OIP.DCNzMSq9TzA-nl6axmY8FAHaHa?rs=1&pid=ImgDetMain" alt="Cable de Carga USB-C">
+                <h3>Cable de Carga USB-C</h3>
+                <p>1 metro, Blanco</p>
+                <p><strong>$10.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/R.8053ba10084bb4e2909ea8194a07c04a?rik=AY%2b7W%2b0imcFtbw&pid=ImgRaw&r=0" alt="Funda para iPhone">
+                <h3>Funda para iPhone</h3>
+                <p>Transparente</p>
+                <p><strong>$15.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/OIP.nrfN8o9q22NLlpaOI93khwHaHa?rs=1&pid=ImgDetMain" alt="Soporte para Auto">
+                <h3>Soporte para Auto</h3>
+                <p>Ajustable, Negro</p>
+                <p><strong>$12.00</strong></p>
+                <button>Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Trocafone | Todos los derechos reservados</p>
+        <p><a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a> | <a href="#">Contacto</a></p>
+    </footer>
+</body>
+
+</html>
